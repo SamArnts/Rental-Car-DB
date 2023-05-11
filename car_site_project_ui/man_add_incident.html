@@ -1,0 +1,218 @@
+
+
+<!DOCTYPE html>
+
+<head>
+    <title>Manager Add Incident</title>
+</head>
+
+<body>
+    <div class="container">
+            <div class = "company-name">
+                Generic Rental Car Company
+            </div>
+
+            <div class = "nav-bar">
+            <button class = "login" onclick="goToLogin()"> Login </button>
+            <button class = "search" onclick="goToManagerSearch()"> Search </button>
+            <button class = "edit" onclick="goToManagerEdit()"> Edit </button>
+            <button class = "add" onclick="goToManagerAdd()"> Add </button>
+
+
+            <script>
+                function goToLogin() {
+                  window.location = "login.html";
+                }
+            </script>
+
+            <script>
+                function goToManagerSearch() {
+                  window.location = "man_search.html";
+                }
+            </script>
+
+            <script>
+                function goToManagerEdit() {
+                  window.location = "man_edit.html";
+                }
+            </script>
+
+            <script>
+                function goToManagerAdd() {
+                  window.location = "man_add.html";
+                }
+            </script>
+        </div>
+        
+
+        <div class = "add-box">
+
+            <form class="incident-add" method="post" name="form">
+                <div class="input-container">
+                    <input type="text" name="incident-id" id="incident-id"><br>
+                    <label for="incident-id">Incident ID</label>
+                    
+                </div>
+                
+                <div class="input-container">
+                    <input type="text" name="incident-description" id="incident-description"><br>
+                    <label for="incident-description">Incident Description</label>
+                    
+                </div>
+
+                <div class="input-container">
+                    <input type="text" name="resolved" id="resolved"><br>
+                    <label for="resolved">Resolved</label>
+                    
+                </div>
+
+                <div class="input-container">
+                    <input type="text" name="cost" id="cost"><br>
+                    <label for="cost">Cost</label>
+                    
+                </div>
+
+                <div class="input-container">
+                    <input type="text" name="reinstated" id="reinstated"><br>
+                    <label for="reinstated">Reinstated</label>
+                    
+                </div>
+
+                <div class="input-container">
+                    <input type="text" name="license-plate" id="license-plate"><br>
+                    <label for="license-plate">License Plate</label>
+                    
+                </div>
+
+            
+
+                <input type="submit" class="submit-button">
+
+            </form>
+        </div>
+    </div>
+
+</body>
+
+
+<style>
+
+    .body{
+        background-color: rgb(250, 250, 250);
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: Arial, Helvetica, sans-serif;
+        vertical-align: middle;
+    }
+
+    .company-name{
+        font-size: 65px;
+        text-align: center;
+        margin-top: 2%;
+        white-space: nowrap;
+        color: rgb(84, 84, 151);
+    }
+
+    .nav-bar{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 20px;
+        border: 2px solid rgb(207, 206, 206);
+        background-color: white;
+        border-radius: 2px;
+    }
+
+    .add-box{
+        border: 2px solid rgb(207, 206, 206);
+        border-radius: 2px;
+        background-color: white;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+    }
+
+
+    .search, .edit, .add, .login{
+        width: 130px;
+        height: 50px;
+        border-radius: 5px;
+        border-width: 0px;
+        background-color: rgb(110, 110, 229);
+        color: white;
+        transition-duration: 0.2s;
+        margin: 5px;
+    }
+
+    .search:hover{
+        background-color: rgb(146, 146, 190);
+    }
+
+    .edit:hover{
+        background-color: rgb(146, 146, 190);
+    }
+
+    .add:hover{
+        background-color: rgb(146, 146, 190);
+    }
+
+    .login:hover{
+        background-color: rgb(146, 146, 190);
+    }
+
+    .incident-add{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: left;
+    }
+
+    .input-container{
+        margin-top: 5px;
+        margin-bottom: 5px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    input{
+        width: 200px;
+
+
+    }
+
+    label{
+        margin: 5px;
+        margin-left: 20px;
+
+    }
+
+    .submit-button{
+        margin-top: 30px;
+        margin-left: 93px;
+        width: 130px;
+        height: 50px;
+        border-radius: 5px;
+        border-width: 0px;
+        background-color: rgb(110, 110, 229);
+        color: white;
+        transition-duration: 0.2s;
+
+    }
+
+
+
+    .submit-button:hover{
+        background-color: rgb(146, 146, 190);
+    }
+
+</style>
